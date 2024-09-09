@@ -1,0 +1,412 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: none;
+font-style: normal;
+text-align: left;
+zoom: 1;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+table {
+border-collapse: collapse;
+font-family: inherit;
+}
+h1,h2,h3,h4,h5 {
+font-size: 100%;
+font-weight: normal;
+line-height: 1;
+}
+input,textarea,select {
+font-family: inherit;
+font-size: 16px;
+}
+th,td {
+border-collapse: collapse;
+}
+table th,table td {
+white-space: nowrap;
+}
+ul,ol {
+list-style-type: none;
+}
+img {
+vertical-align: text-bottom;
+vertical-align: -webkit-baseline-middle;
+max-width: 100%;
+height: auto;
+width /***/:auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+header p {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin-right: 50px;
+}
+
+header span {
+    color: rgb(255,0,0);
+}
+
+.jobjob  {
+    padding-top: 10px;
+}
+
+.jobjob a {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+main img {
+    width: 100%;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.area {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.prefecture_area {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 10px auto;
+    height: auto;
+}
+
+.area_kanto {
+    width: 90%;
+    margin: 20px auto;
+    display: none;
+}
+
+.prefecture_kanto {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 10px auto;
+    height: auto;
+}
+
+.area_kansai {
+    width: 90%;
+    margin: 20px auto;
+    display: none;
+}
+
+.prefecture_kansai {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 10px auto;
+    height: auto;
+}
+
+.area_tokai {
+    width: 90%;
+    margin: 20px auto;
+    display: none;
+}
+
+.prefecture_tokai {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 10px auto;
+    height: auto;
+}
+
+.area_tohoku {
+    width: 90%;
+    margin: 20px auto;
+    display: none;
+}
+
+.prefecture_tohoku {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 10px auto;
+    height: auto;
+}
+
+.area_hokuriku {
+    width: 90%;
+    margin: 20px auto;
+    display: none;
+}
+
+.prefecture_hokuriku {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 10px auto;
+    height: auto;
+}
+
+.area_chugoku {
+    width: 90%;
+    margin: 20px auto;
+    display: none;
+}
+
+.prefecture_chugoku {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 10px auto;
+    height: auto;
+}
+
+.area_shikoku {
+    width: 90%;
+    margin: 20px auto;
+    display: none;
+}
+
+.prefecture_shikoku {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 10px auto;
+    height: auto;
+}
+
+.area_kyushiu {
+    width: 90%;
+    margin: 20px auto;
+    display: none;
+}
+
+.prefecture_kyushiu {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 10px auto;
+    height: auto;
+}
+
+.area_next{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px 10px;
+    width: 30%;
+    text-align: center;
+}
+
+.area_font {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px 10px;
+    background-color: rgb(206, 206, 205);
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+}
+
+.area_toggle {
+    font-size: 40px;
+    font-weight: bold;
+    background-color: rgb(215, 157, 157);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    header {
+        height: 60px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    header p {
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    .jobjob {
+        width: 30%;
+    }
+
+    .jobjob a {
+        font-size: 15px;
+    }
+
+    .area_next{
+        font-size: 17px;
+        font-weight: bold;
+        padding: 20px 10px;
+        width: 80%;
+    }
+
+    .prefecture_area {
+        width: 100%;
+        display: block;
+        margin: 10px auto;
+        height: auto;
+    }
+    
+    .area_kanto {
+        width: 90%;
+        margin: 20px auto;
+        display: none;
+    }
+    
+    .prefecture_kanto {
+        width: 100%;
+        display: block;
+        margin: 10px auto;
+        height: auto;
+    }
+    
+    .area_kansai {
+        width: 90%;
+        margin: 20px auto;
+        display: none;
+    }
+    
+    .prefecture_kansai {
+        width: 100%;
+        display: block;
+        margin: 10px auto;
+        height: auto;
+    }
+    
+    .area_tokai {
+        width: 90%;
+        margin: 20px auto;
+        display: none;
+    }
+    
+    .prefecture_tokai {
+        width: 100%;
+        display: block;
+        margin: 10px auto;
+        height: auto;
+    }
+    
+    .area_tohoku {
+        width: 90%;
+        margin: 20px auto;
+        display: none;
+    }
+    
+    .prefecture_tohoku {
+        width: 100%;
+        display: block;
+        margin: 10px auto;
+        height: auto;
+    }
+    
+    .area_hokuriku {
+        width: 90%;
+        margin: 20px auto;
+        display: none;
+    }
+    
+    .prefecture_hokuriku {
+        width: 100%;
+        display: block;
+        margin: 10px auto;
+        height: auto;
+    }
+    
+    .area_chugoku {
+        width: 90%;
+        margin: 20px auto;
+        display: none;
+    }
+    
+    .prefecture_chugoku {
+        width: 100%;
+        display: block;
+        margin: 10px auto;
+        height: auto;
+    }
+    
+    .area_shikoku {
+        width: 90%;
+        margin: 20px auto;
+        display: none;
+    }
+    
+    .prefecture_shikoku {
+        width: 100%;
+        display: block;
+        margin: 10px auto;
+        height: auto;
+    }
+    
+    .area_kyushiu {
+        width: 90%;
+        margin: 20px auto;
+        display: none;
+    }
+    
+    .prefecture_kyushiu {
+        width: 100%;
+        display: block;
+        margin: 10px auto;
+        height: auto;
+    }
+    
+    .area_font {
+        font-size: 20px;
+        font-weight: bold;
+        padding: 20px 10px;
+        background-color: rgb(206, 206, 205);
+        border-radius: 10px;
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .area_toggle {
+        font-size: 40px;
+        font-weight: bold;
+        background-color: rgb(215, 157, 157);
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        text-align: center;
+    }
+}
+

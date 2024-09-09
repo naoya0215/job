@@ -1,0 +1,292 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: none;
+font-style: normal;
+text-align: left;
+zoom: 1;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+table {
+border-collapse: collapse;
+font-family: inherit;
+}
+h1,h2,h3,h4,h5 {
+font-size: 100%;
+font-weight: normal;
+line-height: 1;
+}
+input,textarea,select {
+font-family: inherit;
+font-size: 16px;
+}
+th,td {
+border-collapse: collapse;
+}
+table th,table td {
+white-space: nowrap;
+}
+ul,ol {
+list-style-type: none;
+}
+img {
+vertical-align: text-bottom;
+vertical-align: -webkit-baseline-middle;
+max-width: 100%;
+height: auto;
+width /***/:auto;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 98%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow-wrap: normal;
+}
+
+.create-job-button-container {
+    margin-bottom: 20px;
+}
+
+.create-job-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #787b7c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.create-job-button:hover {
+    background-color: #2980b9;
+}
+
+.create-job {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.create-job:hover {
+    background-color: #2980b9;
+}
+
+.search-form {
+    margin-bottom: 20px;
+}
+
+.search-form input[type="text"] {
+    padding: 10px;
+    width: calc(100% - 120px);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search-form button {
+    padding: 10px 20px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+.search-form button:hover {
+    background-color: #27ae60;
+}
+
+.job-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    table-layout: fixed;
+}
+
+.job-table th, .job-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.job-table th {
+    background-color: #34495e;
+    color: white;
+    font-weight: bold;
+}
+
+.job-table tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* 列幅の調整 */
+.job-table th:nth-child(1), .job-table td:nth-child(1),
+.job-table th:nth-child(5), .job-table td:nth-child(5) {
+    width: 10%;
+}
+
+.job-table th:nth-child(2), .job-table td:nth-child(2) {
+    width: 15%;
+}
+
+.job-table th:nth-child(3), .job-table td:nth-child(3) {
+    width: 40%;
+}
+
+.job-table th:nth-child(4), .job-table td:nth-child(4) {
+    width: 25%;
+}
+
+/* ホバー時のツールチップ効果 */
+.job-table td {
+    position: relative;
+}
+
+.job-table td:hover::after {
+    content: attr(title);
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    word-wrap: break-word;
+    white-space: normal;
+    z-index: 1;
+}
+
+.edit, .delete {
+    padding: 8px 12px;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+}
+
+.edit {
+    background-color: #3498db;
+}
+
+.edit:hover {
+    background-color: #2980b9;
+}
+
+.delete {
+    background-color: #e74c3c;
+}
+
+.delete:hover {
+    background-color: #c0392b;
+}
+
+@media screen and (max-width: 768px) {
+    .create-job-button-container {
+        text-align: center;
+    }
+    
+    .create-job-button {
+        display: block;
+        width: 90%;
+    }
+
+    .job-table, .job-table thead, .job-table tbody, .job-table th, .job-table td, .job-table tr {
+        display: block;
+    }
+
+    .job-table thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    .job-table tr {
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+    }
+
+    .job-table td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+        text-align: right;
+        white-space: normal;
+        overflow: visible;
+        text-overflow: clip;
+    }
+
+    .job-table td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    .job-table td:nth-child(1), .job-table td:nth-child(5) {
+        text-align: center;
+        padding-left: 12px;
+    }
+
+    .edit, .delete {
+        display: inline-block;
+        width: auto;
+        min-width: 80px;
+    }
+
+    .job-table td:hover::after {
+        display: none;
+    }
+}

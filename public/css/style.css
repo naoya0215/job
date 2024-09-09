@@ -1,0 +1,245 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: none;
+font-style: normal;
+text-align: left;
+zoom: 1;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+table {
+border-collapse: collapse;
+font-family: inherit;
+}
+h1,h2,h3,h4,h5 {
+font-size: 100%;
+font-weight: normal;
+line-height: 1;
+}
+input,textarea,select {
+font-family: inherit;
+font-size: 16px;
+}
+th,td {
+border-collapse: collapse;
+}
+table th,table td {
+white-space: nowrap;
+}
+ul,ol {
+list-style-type: none;
+}
+img {
+vertical-align: text-bottom;
+vertical-align: -webkit-baseline-middle;
+max-width: 100%;
+height: auto;
+width /***/:auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: beige;
+    display: flex;
+    width: 100%;
+}
+
+.header_icon {
+    width: 30%;
+    padding: 10px;
+}
+
+.header_icon h1 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.header_icon h1 span {
+    color: rgb(255,0,0);
+}
+
+.header_icon p {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.header_item {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.header_item a {
+    color: #000;
+}
+
+img {
+    width: 100%;
+}
+
+.main_view h2 {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+} 
+
+.main_flex {
+    display: flex;
+}
+
+.main_flex p {
+    width: 70%;
+    margin: 40px 50px;
+    padding-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.main_flex span {
+   border-bottom: 2px solid rgb(255,0,0);
+}
+
+.main_flex img {
+    width: 50%;
+}
+
+.main_interview h2 {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.interview_flex {
+    display: flex;
+}
+
+.interview_flex img {
+    width: 30%;
+    height: auto;
+}
+
+.interview_flex p {
+    width: 70%;
+    margin: 40px 50px;
+    padding-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.interview_flex span {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+footer {
+    background-color: rgb(217, 159, 169);
+    width: 100%;
+    padding: 20px 0;
+}
+
+footer h1 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+}
+
+footer span {
+    color: rgb(255,0,0);
+}
+
+footer p {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    header {
+        display: block;
+        height: auto;
+    }
+
+    .header_icon {
+        font-size: 1px;
+        font-weight: 100;
+    }
+
+    .header_item {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .header_item p {
+        padding: 5px;
+    }
+
+    .header_item a {
+        color: #000;
+    }
+
+    .main_view h2 {
+        width: 90%;
+        margin: auto;
+        font-size: 18px;
+        margin-top: 20px;
+    } 
+
+    .main_flex {
+        display: block;
+        text-align: center;
+    }
+
+    .main_flex p {
+        margin: auto;
+        font-size: 10px;
+        width: 100%; 
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .main_interview h2 {
+        width: 90%;
+        margin: auto;
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    .interview_flex {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .interview_flex p {
+        margin: 0 auto;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .interview_flex span {
+        font-size: 10px;
+    }
+}
